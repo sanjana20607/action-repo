@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Send webhook POST request
         run: |
-          curl -X POST https://d62705819f02.ngrok-free.app/webhook
+          curl -X POST https://d62705819f02.ngrok-free.app/webhook \
           -H "Content-Type: application/json" \
           -d '{"message": "GitHub Action triggered!"}'
